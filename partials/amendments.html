@@ -1,0 +1,17 @@
+<section class="partial">
+	
+	<div class="search">
+		<label>search: </label>
+		<input type="text" ng-model="query" placeholder="Search Amendments" autofocus>
+	</div>
+	
+	<ul class="list">
+			<a href="#/amendments/{{ amendments.indexOf(amend) + 1 }}" ng-repeat="amend in amendments | filter: query">
+			<li class="item">
+				<h3>{{ amend.num }}</h3>
+				<h1>{{ amend.name }}</h1>
+			</li>
+			</a>
+	</ul>
+	<a href="index.html#/const">&laquo; Back</a>
+</section>

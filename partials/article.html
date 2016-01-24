@@ -1,0 +1,26 @@
+<section class="partial article">
+
+	<div class="item cf" ng-model="articles">
+
+		<div class="cf">
+			<a href="#/articles/{{ whichArticle }}" class="left">Previous</a>
+			<a href="#/articles/{{ whichArticle + 2 }}" class="right">Next</a>
+		</div>
+
+		<h1>{{ articles[whichArticle].num }}</h1>
+		<h1>{{ articles[whichArticle].name }}</h1>
+
+		<div ng-repeat="section in articles[whichArticle].children" class="section cf">
+			<h2>{{ section.num }}</h2>
+			<h3>{{ section.name }}</h3>
+			<ul>
+				<li ng-repeat="content in section.content"> {{ content.text }}</li>
+			</ul>
+		</div>
+
+		<!-- more info link -->
+	</div>
+
+	<a href="#/articles">&laquo; Back</a>
+
+</section>

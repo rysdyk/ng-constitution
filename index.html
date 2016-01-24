@@ -1,0 +1,32 @@
+<!doctype HTML>
+<html lang="en" ng-app="myApp">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Angular Constitution</title>
+		<script src="lib/angular/angular.min.js"></script>
+		<script src="lib/angular/angular-route.min.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/controllers.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<header>
+			<div class="container">
+				<h1><a href="/index.html#/">United States Constitution</a></h1>
+			</div>
+		</header>
+
+		<div class="container" ng-view></div>
+
+		<footer>
+			<div class="container">
+				<div>
+					created by <a href="http://rysdyk.com">@rysdyk</a>
+				</div>
+			</div>
+		</footer>
+	</body>
+
+</html>

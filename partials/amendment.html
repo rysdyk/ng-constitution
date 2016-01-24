@@ -1,0 +1,18 @@
+<section class="partial">
+	
+	<div class="item cf" ng-model="amendments">
+		
+		<div class="cf">
+			<a href="#/amendments/{{ whichAmend }}" class="left">Previous</a>
+			<a href="#/amendments/{{ whichAmend + 2 }}" class="right">Next</a>
+		</div>
+		
+		<span>{{ amendments[whichAmend].num }}</span>
+		<h1>{{ amendments[whichAmend].name }}</h1>
+		<p ng-repeat="p in amendments[whichAmend].children">{{ p.content[0] }}</p>
+		<!-- more info link -->
+	</div>
+	
+	<a href="#/amendments">&laquo; Back</a>
+	
+</section>

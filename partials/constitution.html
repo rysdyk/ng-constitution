@@ -1,0 +1,18 @@
+<section class="partial">
+	
+	<div class="search">
+		<label>search: </label>
+		<input type="text" ng-model="query" placeholder="Search Constitution" autofocus>
+	</div>
+	
+	<ul class="list">
+		
+		<a href="#/{{ laws.indexOf(part) }}" ng-repeat="part in laws | filter:query">
+			<li class="item cf">
+				<h2>{{ part.name }}</h2>
+			</li>
+		</a>	
+			
+	</ul>
+
+</section>

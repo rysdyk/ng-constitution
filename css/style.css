@@ -1,0 +1,316 @@
+@import url('http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+
+/* Base Styles */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.left { float: left; }
+.right { float: right; }
+
+
+
+
+html {
+	position: relative;
+  background-color: #fff;
+  min-height: 100%;
+  height: auto;
+}
+
+body  {
+  font-family: 'Droid Serif', serif;
+  font-size: 1rem;
+  line-height: 160%;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Droid Serif', serif;
+  font-weight: normal;
+  color: #222;
+  text-shadow: 1px 1px rgb(255,255,255, 1);
+}
+
+a {
+  color: #145266;
+  font-family: 'Droid Serif', serif;
+}
+
+h1{
+  color: #222;
+  font-size: 2.2rem;
+  line-height: 100%;
+  margin-bottom: 10px;
+}
+
+h2{
+  font-size: 1.5rem;
+  line-height: 90%;
+  color: #222;
+}
+
+h3{
+  margin-top: 0;
+  color: #222;
+  line-height: 110%;
+  margin-bottom: 5px;
+}
+
+p {
+  line-height: 1.3rem;
+  color: #222;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+}
+
+a.small {
+  line-height: 100%;
+  font-size: .9rem;
+}
+
+/* Layout Styles */
+
+.container {
+	width: 970px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+header {
+	position: fixed;
+	z-index: 3;
+	top: 0;
+	background: #000;
+	opacity: .8;
+	width: 100%;
+	text-align: center;
+}
+
+header h1 {
+	margin-bottom: 0;
+	line-height: 140%;
+}
+
+header h1 a {
+	color: #fff;
+	text-decoration: none;
+}
+
+footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+
+footer .container div {
+	width: 70%;
+	margin: 0 auto;
+	color: #ccc;
+	text-align: center;
+	line-height: 1.5rem;
+	font-size: .9rem;
+	border-top: 1px solid #ccc;
+}
+
+footer a {
+	text-decoration: none;
+	color: #ccc;
+}
+
+.partial {
+	position: relative;
+	width: 70%;
+	margin: 70px auto;
+}
+
+
+/* Search Styles */
+
+.search {
+  background: #fff;
+  color: #222;
+  width: 90%;
+  min-width: 320px;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 10px;
+  padding: 20px 30px;
+/*	border: 1px solid #222;*/
+}
+
+.search h1 {
+  color: #222;
+}
+.search label {
+  display: none;
+}
+
+.search input {
+  font-family: 'Droid Sans', sans-serif;
+  width: 100%;
+  padding: 10px 0 10px 15px;
+  font-size: 1rem;
+  color: #222;
+  background: rgba(255,255,255,0.4);
+  border: 1px solid #222;
+  border-radius: 10px;
+  outline: 0;
+}
+
+.search .formgroup input {
+  border: 1px solid rgba(0,0,0,0.3);
+  display: inline;
+  width: auto;
+}
+
+.search label.formgroup {
+  display: inline;
+  width: auto;
+}
+
+.search select {
+  display: inline;
+  padding: 10px 0 10px 15px;
+  font-size: 1rem;
+  color: #222;
+  background: rgba(255,255,255,0.4);
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 10px;
+  outline: 0;
+}
+
+/* List Styles */
+
+.list {
+  background: #fff;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.list a {
+	display: block;
+	padding: 0 10px;
+	border-bottom: 1px dotted #bbb;
+	text-decoration: none;
+}
+
+.list a:hover {
+  background: #ededed;
+}
+
+.list ul {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+.list li {
+  padding: 40px 10px;
+}
+
+
+.content {
+  font-size: 1.1em;
+  line-height: 160%;
+  background: #fff;
+  color: #222;
+  width: 90%;
+  min-width: 320px;
+  max-width: 620px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+/*  border-radius: 10px;*/
+  z-index: 20;
+}
+
+.content h1 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.article h1 { text-align: center; }
+
+.article .section { margin: 0 0 20px; }
+
+.article .section h2 { margin-top: 20px; }
+
+.article .section h3 {
+  text-transform: uppercase;
+  margin: 3px 0 15px;
+}
+
+.article .section ul li { margin-bottom: 10px; }
+
+@media (max-width: 969px){
+	.container { width: 100%; }
+	.partial { width: 85%; }
+}
+
+@media (max-width: 720px){
+	.partial { width: 95%; }
+
+	header h1 { font-size: 1.5rem; }
+}
